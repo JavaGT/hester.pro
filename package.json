@@ -1,0 +1,27 @@
+{
+  "name": "clout.vip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "serve ./docs",
+    "build": "pug ./pug -o docs --pretty && rm -rf ./docs/components && echo '---\npermalink: 404.html\n---\n' | cat - ./docs/404.html > text.txt.tmp && mv text.txt.tmp ./docs/404.html",
+    "watch": "nodemon -w . -x \"npm run build\" -e \".pug\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavaGT/clout.vip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavaGT/clout.vip/issues"
+  },
+  "homepage": "https://github.com/JavaGT/clout.vip#readme",
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

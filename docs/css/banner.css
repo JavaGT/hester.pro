@@ -1,0 +1,28 @@
+#banner {
+  display: flex;
+  flex-direction: column;
+  background-color: mediumpurple;
+  text-align: center;
+}
+
+#banner h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+#nav {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+#nav a {
+  text-decoration: none;
+  color: yellow;
+  padding: 0.1rem 1rem;
+  margin: 0 1rem;
+}
+
+#nav a:hover {
+  color: white;
+}

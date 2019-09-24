@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico&display=swap');
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  color: mediumpurple;
+  font-weight: bold;
+}
+
+a:visited {
+  color: purple;
+}
+
+ul {
+  padding-left: 2em;
+}
+
+code {
+  background: rgba(0,0,0,0.1);
+  color: rgb(80,80,80);
+  border-radius: 0.1em;
+  padding: 0.2em 0.2em;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: mediumpurple;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+#content {
+  margin: 1em 2em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery.left {
+  justify-content: flex-start;
+}
+
+.gallery img {
+  max-height: 30vh;
+  max-width: calc(100vw - 10em);
+  margin: 1em;
+  display: inline;
+}
+
+.gallery img:hover {
+  outline: 1px dashed mediumpurple;
+  outline-offset: 4px;
+  transform: scale(1.05) translateY(-1%);
+}
+
+.mono {
+  font-family: monospace;
+}
+.bod {
+  max-width: 452pt;
+  font-family: "Lora";
+  font-size: 11pt;
+}
+.bod p:first-of-type::first-letter {
+  font-size: 130%;
+}
+.sub {
+  font-size: 80%;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+.sub::before {
+  content: '• ';
+}
+.sub + p {
+  margin-top: 0;
+}
+.sum {
+  font-weight: bolder;
+  /* border: 1px orangered dashed;
+  border-left: none;
+  border-right: none; */
+}
+.label + ul {
+  margin-top: 0;
+}
+.sorta-block {
+  display: inline-block;
+  font-size: 5em;
+  line-height: 1.2em;
+  -moz-transform: skew(0, -5deg);
+  -ms-transform: skew(0, -5deg);
+  -webkit-transform: skew(0, -5deg);
+  transform: skew(0, -5deg);
+  z-index: 3;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sorta {
+  border-top: 4px solid mediumpurple;
+  border-bottom: 4px solid mediumpurple;
+  background: yellow;
+  text-transform: uppercase;
+  z-index: 3;
+  font-style: italic;
+  padding: 0 1em;
+}
