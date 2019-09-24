@@ -53,6 +53,9 @@ code {
 .gallery.left {
   justify-content: flex-start;
 }
+.gallery.left img:first-child {
+  margin-left: 0;
+}
 
 .gallery img {
   max-height: 30vh;
